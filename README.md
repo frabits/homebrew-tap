@@ -2,7 +2,7 @@
 
 Homebrew Formula for Frabit binary installation on MacOS. Automatically updated via @goreleaser.
 
-To install Skeema using Homebrew:
+To install Frabit using Homebrew:
 
 ```sh
 brew install frabit/tap/frabit
