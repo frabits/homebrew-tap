@@ -5,5 +5,5 @@ Homebrew Formula for Frabit binary installation on MacOS. Automatically updated 
 To install Frabit using Homebrew:
 
 ```sh
-brew install frabit/tap/frabit
+brew install frabits/tap/frabit
 ```
