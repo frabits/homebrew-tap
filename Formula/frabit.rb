@@ -5,12 +5,12 @@
 class Frabit < Formula
   desc "The next-generation database automatic operation platform"
   homepage "https://www.frabit.tech/"
-  version "2.1.11"
+  version "2.1.14"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/frabits/frabit/releases/download/v2.1.11/frabit_2.1.11_darwin_amd64.tar.gz"
-      sha256 "565f5d3f8627fafc323b7bf3d5b8969f2dc8a7b4f2f86a993c7fab65b911762c"
+    if Hardware::CPU.arm?
+      url "https://github.com/frabits/frabit/releases/download/v2.1.14/frabit_2.1.14_darwin_arm64.tar.gz"
+      sha256 "739c964598eb01450bdeeb17cf9203f75c774eaab6da0121e8f077721f01f864"
 
       def install
         bin.install "frabit-admin"
@@ -18,9 +18,9 @@ class Frabit < Formula
         bin.install "frabit-server"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/frabits/frabit/releases/download/v2.1.11/frabit_2.1.11_darwin_arm64.tar.gz"
-      sha256 "5095bb484f1ea90a50c530c879e074da4773e64f56c343e6917fc700132f6799"
+    if Hardware::CPU.intel?
+      url "https://github.com/frabits/frabit/releases/download/v2.1.14/frabit_2.1.14_darwin_amd64.tar.gz"
+      sha256 "61ee6ceec2dd15890aceb2f4d78a622e6108f0ab2f3b8bbb32c7f1527e8803aa"
 
       def install
         bin.install "frabit-admin"
@@ -32,8 +32,8 @@ class Frabit < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frabits/frabit/releases/download/v2.1.11/frabit_2.1.11_linux_arm64.tar.gz"
-      sha256 "5b733bd9ad2aeaf25181bdec152e7ee38d5c4084788c4df7ff028dbfe0257bef"
+      url "https://github.com/frabits/frabit/releases/download/v2.1.14/frabit_2.1.14_linux_arm64.tar.gz"
+      sha256 "75b70f0ab9a2151f685e16842933168797a4c0691f272aaaaf45db757416f2f1"
 
       def install
         bin.install "frabit-admin"
@@ -42,8 +42,8 @@ class Frabit < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/frabits/frabit/releases/download/v2.1.11/frabit_2.1.11_linux_amd64.tar.gz"
-      sha256 "3fbf7fcc59784f51da50f04596a6bf5426748ab1d09b20f6d9a352f09ca854f2"
+      url "https://github.com/frabits/frabit/releases/download/v2.1.14/frabit_2.1.14_linux_amd64.tar.gz"
+      sha256 "5d6279ee718fa708a7b99a93308cb6d6eea3ee1d7b47eee1dc15219a2ec44f30"
 
       def install
         bin.install "frabit-admin"
